@@ -1,9 +1,9 @@
 (function)(){
   'use strict';
 
-  angular.module('lunchCheck', [])
+  angular.module('LunchCheck', [])
   
-.controller(MylunchCheckController', function(){
+.controller(MyLunchCheckController', function(){
 
   });  
   
