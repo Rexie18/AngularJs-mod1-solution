@@ -1,4 +1,7 @@
 (function)(){
-angular.module('lunchCheck', []);
+angular.module('lunchCheck', [])
+.controller(MylunchCheckController', function(){
 
+});
+  
 })();
