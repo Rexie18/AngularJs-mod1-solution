@@ -2,9 +2,12 @@
   'use strict';
 
   angular.module('LunchCheck', [])
-  
-.controller(MyLunchCheckController', function(){
+.controller(MyLunchCheckController', MyLunchCheckController);
+      
+      MyLunchCheckController.$inject = ['$scope'];      
+      function MyLunchCheckController($scope){
+     
 
-  });  
+  };  
   
 })();
