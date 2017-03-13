@@ -1,6 +1,10 @@
 (function)(){
-angular.module('lunchCheck', [])
+  'use strict';
+
+  angular.module('lunchCheck', [])
+  
 .controller(MylunchCheckController', function(){
 
   });  
+  
 })();
