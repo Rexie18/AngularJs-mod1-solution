@@ -14,7 +14,7 @@
 
   };  
   
-  $scope.check = function() {
+  $scope.check = function($scope.MenuInput) {
     $scope.values = [];
     for (i = 0; i < $scope.MenuInput.length; i++) {
      if($scope.values <= 3) {
