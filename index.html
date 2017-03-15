@@ -8,14 +8,14 @@
       .message { font-size: 1.3em; font-weight: bold; }
     </style>
    </head>
-<body ng-app="LunchCheck">
-   <div class="container" ng-controller="MyLunchCheckController">
+<body ng-app='LunchCheck'>
+   <div class="container" ng-controller='MyLunchCheckController'>
      <h1>Lunch Checker</h1>
 
          <div class="form-group">
              <input id="lunch-menu" type="text"
              placeholder="list comma separated dishes you usually have for lunch"
-             class="form-control" ng-model="MenuInput">
+             class="form-control" ng-model='MenuInput'>
          </div>
          <div class="form-group">
              <button class="btn btn-default" ng-click="checkInput()">Check If Too Much</button>
