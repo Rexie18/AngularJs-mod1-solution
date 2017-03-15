@@ -2,16 +2,17 @@
 <html lang="en">
   <head>
     <title>Lunch Checker</title>
+    <meta charset="utf-8">
+    <script src="angular.min.js"></script>
+    <script src="app.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="styles/bootstrap.min.css">
     <style>
       .message { font-size: 1.3em; font-weight: bold; }
     </style>
-    <script scr="script/angular.min.js></script>
-   <script scr= "script/app.js></script>
    </head>
 <body ng-app='LunchCheck'>
-   <div class="container" ng-controller='MyLunchCheckController'>
+   <div class="container" ng-controller='MyLunchCheckcontroller'>
      <h1>Lunch Checker</h1>
 
          <div class="form-group">
@@ -22,34 +23,10 @@
          <div class="form-group">
              <button class="btn btn-default" ng-click="checkInput()">Check If Too Much</button>
          </div>
-         <div class="form-group message" {{checkInput()}}>
-           
+         <div class="form-group message">
+           {{checkInput()}}
            <!-- Your message can go here. -->
          </div>
    </div>
 </body>
 </html>
-
-<!-- <!DOCTYPE html>
-<html ng-app='MsgApp'>
-  <head>
-    <meta charset="utf-8">
-    <script src="angular.min.js"></script>
-    <script src="app.js"></script>
-    <style> body { font-size: 1.2em; }</style>
-    <title>Expressions and Interpolation</title>
-  </head>
-  <body>
-    <h1>Expressions and Interpolation</h1>
-    <div ng-controller='MsgController'>
-      {{name}} has a message for you: <br>
-      {{sayMessage()}}
-      <div>
-        <button ng-click="feedYaakov()">Feed Yaakov</button>
-        <br>
-
-        <img ng-src="images/yaakov_{{stateOfBeing}}.png">
-      </div>
-    </div>
-  </body>
-</html> -->
