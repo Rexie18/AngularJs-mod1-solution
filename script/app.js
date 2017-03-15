@@ -8,19 +8,19 @@
       function MyLunchCheckController($scope){
      $scope.MenuInput = [];
      $scope.values = new Array($scope.MenuInput.length);
-     $scope.values.splice("");
-     $scope.message1 = "First message";
-     $scope.message2 = "Second message";
+     $scope.values.splice(,);
+     $scope.msg1 = "Enjoy!";
+     $scope.msg2 = "Too much!";
 
   };  
   
-  $scope.check = function( ) {
+    $scope.check = function( ) {
     $scope.values = [];
     for (i = 0; i < $scope.MenuInput.length; i++) {
      if($scope.values <= 3) {
-        return $scope.message1;
+        return $scope.msg1;
       }else{
-        return $scope.message2;
+        return $scope.msg2;
         
          }
     }
