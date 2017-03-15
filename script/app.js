@@ -4,7 +4,7 @@
   angular.module('LunchCheck', [])
 .controller(MyLunchCheckController', MyLunchCheckController);
       
-      MyLunchCheckController.$inject = ['$scope'$message];      
+      MyLunchCheckController.$inject = ['$scope'];      
       function MyLunchCheckController($scope){
      $scope.MenuInput = [];
      $scope.values = new Array($scope.MenuInput.length);
@@ -14,7 +14,7 @@
 
   };  
   
-  $scope.check = function($scope.MenuInput) {
+  $scope.check = function( ) {
     $scope.values = [];
     for (i = 0; i < $scope.MenuInput.length; i++) {
      if($scope.values <= 3) {
@@ -23,8 +23,7 @@
         return $scope.message2;
         
          }
-      }
-        
-  });
-  
+    }
+  };
+          
 })();
