@@ -15,9 +15,7 @@
       $scope.checkInput  =  function() {
          return $scope.values.length() <= 3 ? $scope.msg1 : $scope.msg2;       
       }
-       
-    }
-     
+  
   };
       
 })();
