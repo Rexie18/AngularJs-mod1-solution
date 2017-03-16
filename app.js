@@ -1,23 +1,44 @@
-(function () {
+
+(function (angular) {
     'use strict';
-     
-    angular.module('LunchCheck', [])
-   .controller('MyLunchCheckController', MyLunchCheckController);
-     
-    MyLunchCheckController.$inject  =  ['$scope'];
-    function MyLunchCheckController($scope) {
-      var msg1  =   "Enjoy!";
-      var msg2  =   "Too much!";
+    var MyLunchCheckController = function ($scope) {
+      $scope.MenuInput  =  [];
+      $scope.values  =  new Array($scope.MenuInput.length);
+      $scope.values.splice("", "");
+      $scope.msg1  =   "Enjoy!";
+      $scope.msg2  =   "Too much!";
        
-      this.checkInput  =  function() {
-         $scope.MenuInput.split(",")  =  [];
-        var InputReturn = $scope.MenuInput.split(",");
-        return InputReturn.length() <= 3 ? msg1 : msg2;       
-      }
-  
+      $scope.checkInput  =  function() {
+        return $scope.values.length() <= 3 ? $scope.msg1 : $scope.msg2;
+       
+    }
   };
+  MyLunchCheckController.$inject  =  ['$scope'];
+  angular.module('LunchCheck', [])
+    .controller('MyLunchCheckController', MyLunchCheckController);
+})(angular); 
+
+
+// (function () {
+//     'use strict';
+     
+//     angular.module('LunchCheck', [])
+//    .controller('MyLunchCheckController', MyLunchCheckController);
+     
+//     MyLunchCheckController.$inject  =  ['$scope'];
+//     function MyLunchCheckController($scope) {
+//       var msg1  =   "Enjoy!";
+//       var msg2  =   "Too much!";
+       
+//       this.checkInput  =  function() {
+//          $scope.MenuInput.split(",")  =  [];
+//         var InputReturn = $scope.MenuInput.split(",");
+//         return InputReturn.length() <= 3 ? msg1 : msg2;       
+//       }
+  
+//   };
       
-})();
+// })();
 
 
 // (function () {
