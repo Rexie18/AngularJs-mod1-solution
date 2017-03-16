@@ -13,6 +13,7 @@ angular.module('LunchChecker', [])
             } else{
                 $scope.values = $scope.msg2;
             }
+         }
     };   
 })();
 
