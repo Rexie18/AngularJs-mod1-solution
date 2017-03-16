@@ -8,7 +8,7 @@ MyLunchCheckController.$inject = ['$scope'];
 function MyLunchCheckController($scope) {
   $scope.MenuInput = [];
   $scope.values = new Array($scope.MenuInput.length);
-  $scope.values.splice(,);
+  $scope.values.splice("","");
   $scope.msg1 = "Enjoy!";
   $scope.msg2 = "Too much!";
   
