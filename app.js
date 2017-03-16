@@ -6,7 +6,7 @@
    .controller('MyLunchCheckcontroller', MyLunchCheckcontroller);
      
     MyLunchCheckcontroller.$inject  =  ['$scope'];
-    function MyLunchCheckController($scope) {
+    function MyLunchCheckcontroller($scope) {
       $scope.MenuInput  = [].slice;
       $scope.values  =  new Array($scope.MenuInput.length);
       $scope.msg1  =   "Enjoy!";
