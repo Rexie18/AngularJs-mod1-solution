@@ -12,16 +12,16 @@ function MyLunchCheckController($scope) {
   $scope.msg1 = "Enjoy!";
   $scope.msg2 = "Too much!";
   
-      $scope.checkInput = function( ) {
-    $scope.values = [];
-    for (i = 0; i < $scope.MenuInput.length; i++) {
-     if($scope.values <= 3) {
+      $scope.checkInput = function($scope.values) {
+      for (i = 0; i < $scope.values; i++) {
+     
+        if($scope.values <= 3) {
         return $scope.msg1;
       }else{
         return $scope.msg2;
       }
     }
   }
-}
+};
 
 })();
