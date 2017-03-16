@@ -13,7 +13,7 @@ function MyLunchCheckController($scope) {
   $scope.msg2 = "Too much!";
   
       $scope.checkInput = function($scope.values) {
-      for (i = 0; i < $scope.values; i++) {
+      for (var i = 0; i < $scope.values; i++) {
      
         if($scope.values <= 3) {
         return $scope.msg1;
