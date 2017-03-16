@@ -3,10 +3,10 @@
     'use strict';
      
     angular.module('LunchChecker', [])
-   .controller('MyLunchCheckcontroller', MyLunchCheckcontroller);
+   .controller('MyLunchCheckController', MyLunchCheckController);
      
-    MyLunchCheckcontroller.$inject  =  ['$scope'];
-    function MyLunchCheckcontroller($scope) {
+    MyLunchCheckController.$inject  =  ['$scope'];
+    function MyLunchCheckController($scope) {
       $scope.MenuInput  = [].slice;
       $scope.values  =  new Array($scope.MenuInput.length);
       $scope.msg1  =   "Enjoy!";
