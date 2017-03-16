@@ -13,9 +13,15 @@
       $scope.msg2  =   "Too much!";
        
       $scope.checkInput  =  function() {
-         return $scope.values.length() <= 3 ? $scope.msg1 : $scope.msg2;       
-      };
-     
+        for (var i = 0; i < $scope.values; i++) {
+          
+          if($scope.values <= 3) {
+            return $scope.msg1;
+             }else{
+            return $scope.msg2;
+             }
+          }
+      };   
   }
       
 })();
