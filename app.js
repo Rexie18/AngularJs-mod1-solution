@@ -1,7 +1,11 @@
 
 (function (angular) {
     'use strict';
-    var MyLunchCheckController = function ($scope) {
+  MyLunchCheckcontroller.$inject  =  ['$scope'];
+  angular.module('LunchCheck', [])
+    .controller('MyLunchCheckcontroller', MyLunchCheckcontroller);
+  
+    var MyLunchCheckcontroller = function ($scope) {
       $scope.MenuInput  =  [];
       $scope.values  =  new Array($scope.MenuInput.length);
       $scope.values.splice("", "");
@@ -13,9 +17,7 @@
        
     }
   };
-  MyLunchCheckController.$inject  =  ['$scope'];
-  angular.module('LunchCheck', [])
-    .controller('MyLunchCheckController', MyLunchCheckController);
+  
 })(angular); 
 
 
