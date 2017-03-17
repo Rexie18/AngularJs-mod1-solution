@@ -27,7 +27,7 @@
     MyLunchCheckController.$inject  =  ['$scope'];
     function MyLunchCheckController($scope) {
       $scope.MenuInput  = [];
-      $scope.MenuInput.splice(,);
+     // $scope.MenuInput.splice(,);
       $scope.msg1  =   "Enjoy!";
       $scope.msg2  =   "Too much!";
        
