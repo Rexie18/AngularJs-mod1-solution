@@ -32,7 +32,7 @@
        
       $scope.checkInput  =  function() {
        // for (var i = 0; i < $scope.values; i++) {
-          if($scope.MenuInput.split(",").length <= 3) {
+          if($scope.MenuInput.length <= 3) {
           //if($scope.values <= 3) {
             return $scope.msg1;
              }else{
