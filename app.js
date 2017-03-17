@@ -14,7 +14,7 @@ angular.module('LunchChecker', [])
                 $scope.values = $scope.msg2;
             }
          }
-    };   
+    }  
 })();
 
 
