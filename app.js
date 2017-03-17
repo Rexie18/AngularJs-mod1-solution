@@ -8,7 +8,8 @@
      
     MyLunchCheckController.$inject  =  ['$scope'];
     function MyLunchCheckController($scope) {
-    $scope.msg1  =   "Enjoy!";
+    $scope.MenuInput= [];
+     $scope.msg1  =   "Enjoy!";
      $scope.msg2  =   "Too much!";
 
      $scope.checkInput  =  function() {
@@ -18,7 +19,7 @@
                 $scope.values = $scope.msg2;
             }
          }
-    }  
+    };  
 })();
 
 
