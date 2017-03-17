@@ -13,7 +13,7 @@
 //      $scope.msg2  =   "Too much!";
 
 //      $scope.checkInput  =  function() {
-//             if($scope.MenuInput.split(",").length <= 4) {
+//             if($scope.MenuInput.split(",").length <= 3) {
 //                 $scope.values = $scope.msg1;
 //             } else{
 //                 $scope.values = $scope.msg2;
@@ -48,4 +48,4 @@
 //       };   
       
 // })();
-!function(){"use strict";function a(a){a.MenuInput=[],a.msg1="Enjoy!",a.msg2="Too much!",a.checkInput=function(){a.MenuInput.split(",").length<=4?a.values=a.msg1:a.values=a.msg2}}angular.module("LunchChecker",[]).controller("MyLunchCheckController",a),a.$inject=["$scope"]}();
+!function(){"use strict";function a(a){a.MenuInput=[],a.msg1="Enjoy!",a.msg2="Too much!",a.checkInput=function(){a.MenuInput.split(",").length<=3?a.values=a.msg1:a.values=a.msg2}}angular.module("LunchChecker",[]).controller("MyLunchCheckController",a),a.$inject=["$scope"]}();
