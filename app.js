@@ -17,8 +17,7 @@
                if($scope.MenuInput=== -1) {
                 $scope.values = $scope.msg3;
             } 
-
-             else if($scope.MenuInput.split(",").length <= 3) {
+              if($scope.MenuInput.split(",").length <= 3) {
                 $scope.values = $scope.msg1;
             } else{
                 $scope.values = $scope.msg2;
