@@ -14,11 +14,11 @@
      $scope.msg3  =   "Enter data first";
 
      $scope.checkInput  =  function() {
-               if($scope.MenuInput.split(",").length !== 0)  {
+               if($scope.MenuInput.split(",").length === -1)  {
                 $scope.values = $scope.msg3;
             } 
 
-              if($scope.MenuInput.split(",").length <= 3) {
+             else if($scope.MenuInput.split(",").length <= 3) {
                 $scope.values = $scope.msg1;
             } else{
                 $scope.values = $scope.msg2;
