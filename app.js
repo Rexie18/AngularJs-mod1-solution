@@ -14,7 +14,7 @@
      $scope.msg3  =   "Enter data first";
 
      $scope.checkInput  =  function() {
-               if($scope.MenuInput.split(",").length <0)  {
+               if($scope.MenuInput.split(",").length !== 0) {
                 $scope.values = $scope.msg3;
             } 
 
